@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hdlogin"
+    android:gravity="center" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/editext_selector"
+        android:drawableLeft="@drawable/hdun"
+        android:drawablePadding="5dp"
+        android:hint="请输入账号"
+        android:paddingLeft="8dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editText1"
+        android:layout_margin="10dp"
+        android:background="@drawable/editext_selector"
+        android:drawableLeft="@drawable/hdpw"
+        android:drawablePadding="5dp"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:paddingLeft="8dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/editText2"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/hdbtn"
+        android:onClick="login"
+        android:text="登陆" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignRight="@+id/editText2"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/hdbtn"
+        android:text="指纹登陆" />
+
+</RelativeLayout>

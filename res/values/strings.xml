@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">刘鹏</string>
+    <string name="settings">设置</string>
+    <string name="routine">日常工作</string>
+    <string name="query">查询</string>
+    <string name="reset">重置</string>
+    <string name="mounth">本月任务信息</string>
+    <string name="quarter">季度任务信息</string>
+    <string name="year">年度任务信息</string>
+    <string name="ts">暂存列表</string>
+    <string name="hdPC">今日入住人数：0\n今日退房人数：0\n发现逃犯人数：0</string>
+
+</resources>

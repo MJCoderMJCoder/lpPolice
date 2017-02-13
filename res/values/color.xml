@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="gray">#777777</color>
+    <color name="liteGray">#A5A5A5</color>
+    <color name="red">#FF0000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="water">#EFFFFF</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="liteYellow">#FFD955</color>
+    <color name="liteBlue">#30AEEB</color>
+    <color name="topbar">#DCDEDB</color>
+    <color name="liteBlack">#282739</color>
+    <color name="blue">#0066CC</color>
+    <color name="task">#B3E5FC</color>
+    <color name="sewage">#BCDCEB</color>
+
+</resources>

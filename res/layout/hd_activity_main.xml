@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hdmain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/water"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/hdBanner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/hdbanner"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/hdTop"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/liteBlue"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/ts"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <RadioGroup
+        android:id="@+id/task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/gray"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <RadioButton
+            android:id="@+id/mounth"
+            style="@style/hdTask"
+            android:drawableTop="@drawable/hd_mounthicon"
+            android:text="@string/mounth"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:id="@+id/quarter"
+            style="@style/hdTask"
+            android:drawableTop="@drawable/hd_quartericon"
+            android:text="@string/quarter"
+            android:textSize="11sp" />
+
+        <RadioButton
+            android:id="@+id/year"
+            style="@style/hdTask"
+            android:drawableTop="@drawable/hd_yearicon"
+            android:text="@string/year"
+            android:textSize="11sp" />
+    </RadioGroup>
+
+    <GridView
+        android:id="@+id/hdGridSet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hdBanner"
+        android:layout_margin="10dp"
+        android:background="@color/water"
+        android:horizontalSpacing="5dp"
+        android:numColumns="2"
+        android:verticalSpacing="9dp"
+        android:visibility="gone" >
+    </GridView>
+
+    <GridView
+        android:id="@+id/hdGridRoutine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/hdBottom"
+        android:layout_below="@+id/hdBanner"
+        android:layout_margin="10dp"
+        android:background="@color/water"
+        android:horizontalSpacing="5dp"
+        android:numColumns="2"
+        android:verticalSpacing="9dp"
+        android:visibility="gone" >
+    </GridView>
+
+    <TextView
+        android:id="@+id/hdText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hdGridSet"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:text="@string/hdPC"
+        android:visibility="gone" />
+
+    <RadioGroup
+        android:id="@+id/hdBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/hdroutine"
+            style="@style/hdBtn"
+            android:drawableTop="@drawable/hd_routineicon"
+            android:text="@string/routine" />
+
+        <RadioButton
+            android:id="@+id/hdset"
+            style="@style/hdBtn"
+            android:drawableTop="@drawable/hd_seticon"
+            android:text="@string/settings" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/edit1Hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hdTop"
+        android:layout_margin="10dp"
+        android:text="@string/app_name"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/hdedit1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/edit1Hint"
+        android:layout_below="@+id/hdTop"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/edit1Hint"
+        android:background="@drawable/editext_selector"
+        android:padding="5dp"
+        android:textSize="13sp"
+        android:visibility="gone" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/edit2Hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hdedit1"
+        android:layout_margin="10dp"
+        android:text="@string/app_name"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/hdedit2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/edit2Hint"
+        android:layout_below="@+id/hdedit1"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/edit2Hint"
+        android:background="@drawable/editext_selector"
+        android:padding="5dp"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/edit3Hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit2Hint"
+        android:layout_margin="10dp"
+        android:text="@string/app_name"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/hdedit3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignBaseline="@+id/edit3Hint"
+        android:layout_below="@+id/hdedit2"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/edit3Hint"
+        android:background="@drawable/editext_selector"
+        android:padding="5dp"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/hdedit2"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/hdedit2"
+        android:background="@drawable/hdspinner"
+        android:entries="@array/sites"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/record"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/edit3Hint"
+        android:layout_margin="10dp"
+        android:background="@drawable/hdbtn"
+        android:text="@string/query"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/hdQuery"
+        android:layout_width="144dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/record"
+        android:layout_margin="10dp"
+        android:background="@drawable/hdbtn"
+        android:text="@string/query"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/hdReset"
+        android:layout_width="144dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/hdQuery"
+        android:layout_alignRight="@+id/hdedit1"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/hdQuery"
+        android:background="@drawable/hdbtn"
+        android:text="@string/reset"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/taskList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/hdBottom"
+        android:layout_below="@+id/hdTop"
+        android:divider="@drawable/line"
+        android:padding="10dp"
+        android:visibility="gone" >
+    </ListView>
+
+</RelativeLayout>

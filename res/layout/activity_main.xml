@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.lzf.activity.MainActivity" >
+
+    <View
+        android:id="@+id/imageTop"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/top" />
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/routine"
+            style="@style/menu"
+            android:drawableTop="@drawable/shape"
+            android:text="@string/routine"
+            android:textColor="@color/blue" />
+
+        <TextView
+            android:id="@+id/setting"
+            style="@style/menu"
+            android:drawableTop="@drawable/cogwheel"
+            android:text="@string/settings" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/bottom"
+        android:background="@color/topbar" />
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/divider"
+        android:layout_below="@+id/imageTop"
+        android:gravity="center"
+        android:numColumns="3"
+        android:verticalSpacing="10dp" >
+    </GridView>
+
+</RelativeLayout>
